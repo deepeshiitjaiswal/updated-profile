@@ -102,7 +102,7 @@ const Hero = () => {
                 transition={{ duration: 0.3 }}
               >
                 <img
-                  src="/profile.jpg"
+                  src="/images/profile-pic.png"
                   alt="Deepesh Jaiswal"
                   className="w-full h-full object-cover"
                   onError={(e) => {
