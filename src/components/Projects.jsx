@@ -108,7 +108,35 @@ const Projects = () => {
       tags: ["Istio", "Kubernetes", "Microservices"],
       github: "https://github.com/yourusername/service-mesh",
       demo: ""
-    }
+    },
+    {
+      title: "KEDA Autoscaling Implementation",
+      description: "Implemented KEDA (Kubernetes Event-driven Autoscaling) for event-driven scaling of applications, reducing resource costs by 45%",
+      tags: ["Kubernetes", "KEDA", "Metrics", "Scaling"],
+      github: "https://github.com/yourusername/keda-scaling",
+      demo: ""
+    },
+    {
+      title: "EKS Cluster Architecture",
+      description: "Designed and implemented production-grade EKS clusters with advanced networking, security, and monitoring capabilities",
+      tags: ["AWS", "EKS", "Kubernetes", "Terraform"],
+      github: "https://github.com/yourusername/eks-architecture",
+      demo: ""
+    },
+    {
+      title: "AWS Cloud Security Framework",
+      description: "Developed comprehensive security framework using AWS Security Hub, GuardDuty, and WAF with automated remediation",
+      tags: ["AWS", "Security", "CloudWatch", "Lambda"],
+      github: "https://github.com/yourusername/aws-security",
+      demo: ""
+    },
+    {
+      title: "Golden Image Pipeline",
+      description: "Created automated golden image pipeline using Ansible Lockdown and Packer, ensuring consistent security standards",
+      tags: ["Ansible", "Packer", "Security", "CI/CD"],
+      github: "https://github.com/yourusername/golden-image",
+      demo: ""
+    },
   ];
 
   return (

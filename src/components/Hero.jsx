@@ -3,6 +3,24 @@ import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Hero = () => {
+  const handleGetInTouch = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleDownloadCV = () => {
+    // Replace this URL with the actual path to your CV
+    const cvUrl = '/Deepesh_Jaiswal_CV.pdf';
+    const link = document.createElement('a');
+    link.href = cvUrl;
+    link.download = 'Deepesh_Jaiswal_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="home" className="min-h-screen relative overflow-hidden">
       {/* Background Gradient */}
@@ -29,6 +47,7 @@ const Hero = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start mb-8">
               <motion.button
+                onClick={handleGetInTouch}
                 className="mac-primary-button"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -36,6 +55,7 @@ const Hero = () => {
                 Get in Touch
               </motion.button>
               <motion.button
+                onClick={handleDownloadCV}
                 className="mac-secondary-button"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
